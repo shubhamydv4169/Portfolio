@@ -1,0 +1,427 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: #f4f4f4;
+    color: #333;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 40px;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    position: fixed; /* Make the header fixed */
+    top: 0; /* Position it at the top */
+    left: 0;
+    right: 0; /* Make it full width */
+    z-index: 1000; /* Ensure it stays on top of other elements */
+    transition: background-color 0.3s ease-in; /* Smooth transition for background color */
+
+}
+
+body { 
+    margin-top: 80px; /* Add margin to the body to prevent content from being hidden under the fixed header */
+}
+
+.logo h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #ff9900; /* Highlighting the last name */
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth color and transform transition */
+}
+
+nav ul li a:hover {
+    color: #ff9900; /* Change color on hover */
+    transform: scale(1.1); /* Slightly enlarge the link on hover */
+}
+
+.button .H-btn {
+    background-color: #ff9900; /* Button background */
+    color: #ffffff; /* Button text color */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth background and transform transition */
+}
+
+.button .H-btn:hover {
+    background-color: #cc7a00; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+/* Home Section */
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 20px;
+    background: #3498db;
+    color: white;
+    position: relative; /* Allows positioning of elements */
+    overflow: hidden; /* Prevents overflow from image */
+}
+
+.intro {
+    flex: 1;
+    padding: 20px;
+    max-width: 600px; /* Restricts width for better readability */
+}
+
+.intro h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.intro h1 span {
+    color: #ff9900; /* Highlight the name */
+}
+
+.intro h2.loop {
+    font-size: 2rem;
+    margin-bottom: 20px; /* Adds space below the heading */
+}
+
+.intro p {
+    font-size: 1.1rem;
+    margin: 20px 0;
+    line-height: 1.5; /* Improves readability */
+}
+
+.cta-buttons {
+    margin: 20px 0; /* Space between buttons */
+}
+
+.image {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Center the image */
+    align-items: center;
+}
+
+.image img {
+    width: 80%;
+    max-width: 500px; /* Limits the maximum width */
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Social Media Icons */
+.social-media {
+    margin-top: 20px; /* Space above social media icons */
+}
+
+.social-media a {
+    margin: 0 10px;
+    color: white;
+    font-size: 1.5rem; /* Larger icons */
+    transition: color 0.3s ease; /* Smooth transition */
+}
+
+.social-media a:hover {
+    color: #ff9900; /* Highlight color on hover */
+}
+
+/* About Section */
+.about {
+    padding: 60px 20px;
+    background: #ffffff;
+    text-align: center;
+    position: relative; /* For any potential background images or effects */
+}
+
+.about-content {
+    max-width: 800px; /* Limits width for better readability */
+    margin: auto; /* Centers the content */
+    padding: 20px; /* Adds space around the content */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.about-content h3 {
+
+    margin-bottom: 10px;
+    color: #e74c3c; /* Accent color for emphasis */
+    font-size: 1.5rem; /* Size for subheading */
+}
+
+.about-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2px; /* Space below the main title */
+}
+
+.about-content h2 {
+    color: #3498db; /* Color for the professional title */
+    font-size: 2rem; /* Size for the professional title */
+    margin-bottom: 20px; /* Space below the subtitle */
+}
+
+.about-content p {
+    color: #555; /* Dark gray for text */
+    line-height: 1.6; /* Improved line height for readability */
+    margin: 15px 0; /* Space above and below paragraphs */
+}
+
+/* Services Section */
+.services {
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #6dd5ed, #2193b0);
+    text-align: center;
+}
+
+.services h2 {
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    color: #fff; /* White text for contrast */
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.service {
+    background: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    width: 250px; /* Fixed width for uniformity */
+    margin: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+.service-icon {
+    font-size: 4rem;
+    color: #2193b0;
+    margin-bottom: 20px;
+}
+
+.service h3 {
+    margin: 15px 0;
+    color: #2c3e50;
+}
+
+.service p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.service-btn {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.service-btn:hover {
+    background: #c0392b;
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px 20px; /* Padding for top and bottom */
+    background: #fff; /* White background */
+    text-align: center; /* Centered text */
+}
+
+.contact h2 {
+    font-size: 2.5rem; /* Larger title font */
+    color: #2c3e50; /* Dark color for title */
+    margin-bottom: 20px; /* Space below title */
+}
+
+.contact-container {
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space between form and info */
+    align-items: flex-start; /* Align items to the top */
+    flex-wrap: wrap; /* Wrap elements on small screens */
+    max-width: 1200px; /* Limit the width for larger screens */
+    margin: auto; /* Center container */
+}
+
+.contact-form {
+    flex: 1; /* Allow form to take available space */
+    min-width: 300px; /* Minimum width for the form */
+    margin-right: 20px; /* Space between form and info */
+}
+
+.contact-info {
+    flex: 1; /* Allow info section to take available space */
+    min-width: 300px; /* Minimum width for the info */
+}
+
+.form-control {
+    margin-bottom: 15px; /* Space below each form element */
+}
+
+.input-field {
+    width: 100%; /* Full width for inputs */
+    padding: 15px; /* Padding for input fields */
+    border: 1px solid #ccc; /* Border for input fields */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.input-field:focus {
+    border-color: #e74c3c; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+.btn {
+    background: #e74c3c; /* Button color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Padding for button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background 0.3s; /* Smooth background transition */
+}
+
+.btn:hover {
+    background: #c0392b; /* Darker shade on hover */
+}
+
+.contact-info h3 {
+    margin: 20px 0 10px; /* Space for heading */
+}
+
+.contact-info h4 {
+    margin-top: 20px; /* Space before follow section */
+    margin-bottom: 10px; /* Space below heading */
+}
+
+.social-media ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Flexbox for layout */
+    justify-content: center; /* Center align */
+}
+
+.social-media ul li {
+    margin: 0 15px; /* Space between icons */
+}
+
+.social-media ul li a {
+    color: #e74c3c; /* Icon color */
+    font-size: 1.5rem; /* Icon size */
+    transition: color 0.3s; /*Smooth color transition */
+}
+
+.social-media ul li a:hover {
+    color: #c0392b; /* Darker shade on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column; /* Stack elements vertically on small screens */
+    }
+    
+    .contact-form {
+        margin-right: 0; /* Remove right margin on small screens */
+    }
+}
+
+/* Footer */
+.footer {
+    background: #333; /* Dark background for contrast */
+    color: #fff; /* White text for readability */
+    padding: 20px 0; /* Padding for top and bottom */
+    text-align: center; /* Centered text */
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center items */
+}
+
+.footer-social-media {
+    margin-bottom: 10px; /* Space below social media icons */
+}
+
+.footer-social-media a {
+    margin: 0 15px; /* Space between icons */
+    color: #fff; /* Icon color */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.footer-social-media a:hover {
+    color: #e74c3c; /* Change icon color on hover */
+}
+
+.footer-nav {
+    margin-bottom: 10px; /* Space below navigation links */
+}
+
+.footer-nav ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+.footer-nav ul li {
+    display: inline; /* Display list items inline */
+    margin: 0 15px; /* Space between links */
+}
+
+.footer-nav ul li a {
+    color: #fff; /* Link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.footer-nav ul li a:hover {
+    color: #e74c3c; /* Change link color on hover */
+}
+
+.footer-bottom {
+    margin-top: 10px; /* Space above copyright text */
+}
+
+.footer-bottom p {
+    margin: 0; /* Remove default margin */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+    }
+}
